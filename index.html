@@ -11,7 +11,8 @@
 
 <body>
     <div class="header">
-        <img src="immage/p3" class="logo">
+        
+        <img src="immage/p3" class="logo" alt="Logo">
         <nav>
             <ul>
                 <li><a href="#header">Home</a></li>
@@ -25,100 +26,89 @@
     <div id="content">
         <div class="header-text">
             <p>Computer Science Engineering</p>
-            <h1>Hello, Iam <span>Vishakha H Suvarna</span></h1>
+            <h1>Hello, I am <span>Vishakha H Suvarna</span></h1>
         </div>
         <div class="profile-image"></div>
     </div>
-    <!----------------about------------------->
+
+    <!----------------About Section------------------->
     <section id="about">
-    <div class="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="immage/p2.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>I am Vishakha H Suvarna, an engineering student specializing in Information Science & Engineering. With foundation skills in Python ,C and Full stack development I’ve developed projects like an AI chatbot and a solar-powered grass cutter during my internship at Novigo Solution. I also mentor students and have a passion for cloud computing, operating systems, and software testing. I’m eager to bring my problem-solving abilities and technical skills to a professional environment.
-                    </p>
-                    <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="immage/p2.png" alt="About Image">
                     </div>
-                    <div class="tab-contains active-tab" id="skills">
-                        <ul>
-                            <li><span>web Development</span> <br>web/app interfaces </li>
-                            <li><span>Python programming</span> <br>worked on project like Face detection and
-                                recognition using opencv </li>
-                            <li><span>SQL</span> <br>worked on project like Healthcare Management System </li>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am Vishakha H Suvarna, an engineering student specializing in Information Science & Engineering. I’ve developed projects like an AI chatbot and a solar-powered grass cutter during my internship at Novigo Solution. I also mentor students and have a passion for cloud computing, operating systems, and software testing.</p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contains active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span> <br>Web/app interfaces</li>
+                                <li><span>Python Programming</span> <br>Worked on projects like Face Detection and Recognition using OpenCV</li>
+                                <li><span>SQL</span> <br>Worked on Healthcare Management System</li>
+                            </ul>
+                        </div>
 
-
-                        </ul>
-                    </div>
-
-                    <div class="tab-contains" id="experience">
-                        <ul>
-                            <li><span>OCTOBER 2023</span> <br>Software Developer Intern at Novigo Solution </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contains" id="education">
-                        <ul>
-                            <li><span>2025</span> <br>Information Science Engineering at Sahyadri College Of Engineering
-                                and Management Manglore </li>
-                            <li><span>2021</span> <br>PUC at Vivekananda PU College Puttur</li>
-                            <li><span>2019</span> <br>SSLC at SVS Vidyagiri Bantwal </li>
-
-
-                        </ul>
+                        <div class="tab-contains" id="experience">
+                            <ul>
+                                <li><span>OCTOBER 2023</span> <br>Software Developer Intern at Novigo Solution</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contains" id="education">
+                            <ul>
+                                <li><span>2025</span> <br>Information Science Engineering at Sahyadri College of Engineering and Management</li>
+                                <li><span>2021</span> <br>PUC at Vivekananda PU College, Puttur</li>
+                                <li><span>2019</span> <br>SSLC at SVS Vidyagiri, Bantwal</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
     </section>
-    <!-- --------------portfolio------------------- -->
-<section id="portfolio">
-    <div class="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <!-- Project 1 -->
-                <div class="work">
-                    <img src="immage/project1.png">
-                    <div class="layer">
-                        <h3>Yellow Leaf Disease Detection</h3>
-                        <p>Developed a machine learning model with CNN and IOT</p>
-                    </div>
-                </div>
 
-                <!-- Project 2 -->
-                <div class="work">
-                    <img src="immage/project2.png">
-                    <div class="layer">
-                        <h3>Educational Chatbot</h3>
-                        <p>Developed an advanced chatbot using Gradio and PalmAI, integrating a voice assistant for
-                            enhanced user engagement and accessibility.</p>
+    <!-- --------------Portfolio Section------------------- -->
+    <section id="portfolio">
+        <div class="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="immage/project1.png" alt="Yellow Leaf Disease Detection">
+                        <div class="layer">
+                            <h3>Yellow Leaf Disease Detection</h3>
+                            <p>Developed a machine learning model with CNN and IoT.</p>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Project 3 -->
-                <div class="work">
-                    <img src="immage/project3.png">
-                    <div class="layer">
-                        <h3>Solar Powered Grass Cutter</h3>
-                        <p>The solar grass cutter that eliminates the problems with conventional lawn mowers and runs on
-                            solar power.</p>
+                    <div class="work">
+                        <img src="immage/project2.png" alt="Educational Chatbot">
+                        <div class="layer">
+                            <h3>Educational Chatbot</h3>
+                            <p>Developed an advanced chatbot using Gradio and PalmAI.</p>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="immage/project3.png" alt="Solar Powered Grass Cutter">
+                        <div class="layer">
+                            <h3>Solar Powered Grass Cutter</h3>
+                            <p>Solar-powered grass cutter for efficient lawn care.</p>
+                        </div>
                     </div>
                 </div>
+                <a href="#" class="btn">See More</a>
             </div>
-            <a href="#" class="btn">See More</a>
         </div>
-    </div>
-</section>
-    <!-- --------------contact------------------ -->
+    </section>
+
+    <!-- --------------Contact Section------------------ -->
     <section id="contact">
         <div class="contact">
             <div class="container">
@@ -133,15 +123,6 @@
                             <a href="#"><i class="fa-brands fa-instagram"></i></a>
                             <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         </div>
-                        <!-- Skills Section -->
-                        <h2 class="sub-title">My Skills</h2>
-                        <ul class="skills">
-                            <li>Python</li>
-                            <li>Full Stack Development</li>
-                            <li>Software Testing</li>
-                            <li>Power BI</li>
-                        </ul>
-                        <!-- Resume Download -->
                         <a href="vishFinal3.pdf" class="btn">Download Resume</a>
                     </div>
                     <div class="contact-right">

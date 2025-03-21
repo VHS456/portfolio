@@ -441,38 +441,108 @@ nav ul li a.active {
     background-color: #cc0041;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .contact-left,
-    .contact-right {
-      flex-basis: 100%;
-    }
-  
-    .contact-left {
+  /* Mobile responsive styles */
+/* Mobile View Changes */
+@media (max-width: 768px) {
+
+  /* Navigation and logo container in one line */
+  .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+  }
+
+  /* Portfolio Icon (logo) */
+  .portfolio-icon {
+      width: 40px; /* Small size for mobile */
+      height: 40px;
+  }
+
+  /* Horizontal navigation menu for mobile */
+  nav ul {
+      display: flex;
+      gap: 15px; /* Smaller gap between the navigation buttons */
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  nav ul li {
+      display: inline;
+  }
+
+  nav ul li a {
+      font-size: 12px; /* Smaller font size for mobile */
+      padding: 8px 12px; /* Smaller padding for the nav links */
+      background-color: rgba(255, 255, 255, 0.1); /* Light background for buttons */
+      border: 2px solid #ff69b4; /* Border for buttons */
+      border-radius: 20px; /* Rounded buttons */
+      color: #fff;
+      text-decoration: none; /* Remove underline */
+  }
+
+  nav ul li a:hover {
+      background-color: #ff69b4; /* Hover effect */
+      color: #000;
+  }
+
+  /* Background section for smaller screens */
+  #home-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh; /* Smaller background for mobile */
+      background: linear-gradient(to bottom right, #ff69b4, #6a1b9a); /* Gradient background */
+      color: #fff;
+      padding: 20px;
+  }
+
+  /* Profile image */
+  .profile-image {
+      width: 100px;
+      height: 100px;
+      margin: 20px auto;
+      border-radius: 50%; /* Circular profile picture */
+      border: 5px solid white; /* Add border */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow */
+  }
+
+  /* Text in the home section */
+  .header-text {
       text-align: center;
-    }
-  
-    .social-icons a {
-      margin-right: 10px;
-    }
+      margin-top: 20px;
   }
-  
-  @media (max-width: 576px) {
-    .contact-right form input,
-    .contact-right form textarea {
-      padding: 10px;
-    }
-  
-    .contact-right form button {
-      padding: 10px 15px;
-    }
-  
-    .contact-left a.btn {
-      padding: 10px 15px;
-    }
+
+  .header-text h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
   }
-  
 
+  .header-text p {
+      font-size: 16px;
+  }
 
+  /* Even smaller screen adjustments */
+  @media (max-width: 600px) {
+      .portfolio-icon {
+          width: 30px; /* Smaller for small mobile devices */
+          height: 30px;
+      }
 
+      nav ul {
+          gap: 10px; /* Even smaller gap */
+      }
 
+      nav ul li a {
+          font-size: 10px; /* Smaller font for smaller screens */
+          padding: 5px 8px; /* Smaller padding */
+      }
+
+      #home-section {
+          padding: 10px;
+          min-height: 60vh; /* Smaller background for smaller devices */
+      }
+  }
+}
